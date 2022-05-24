@@ -1,8 +1,9 @@
 PODS:
   - CTMediator (0.1.0)
   - HomeVC (0.1.0):
+    - CTMediator
     - Masonry
-    - SettingVC
+    - ModuleActionsCategorys/SettingVC
   - Masonry (1.1.0)
   - ModuleActionsCategorys (0.1.0):
     - ModuleActionsCategorys/HomeVC (= 0.1.0)
@@ -13,6 +14,8 @@ PODS:
     - CTMediator
   - SettingVC (0.1.0):
     - CTMediator
+    - Masonry
+    - ModuleActionsCategorys/HomeVC
 
 DEPENDENCIES:
   - CTMediator (from `../../CTMediator`)
@@ -35,12 +38,12 @@ EXTERNAL SOURCES:
     :path: "../../SettingVC"
 
 SPEC CHECKSUMS:
-  CTMediator: 19c3eb0e0b325356b9d09dbfa2b8a91533ab8aa0
-  HomeVC: bd30369fd680a4fe4b7c54180dd62a95a4275787
+  CTMediator: 9e3c710b119fcd6a98e5c1a149ce440e1fbe263d
+  HomeVC: 7917e5b397617418fb763429fd8d07d3032f13be
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   ModuleActionsCategorys: e400c8aef6e198fa6a915f7bc3e5fbf2aa5d44ad
-  SettingVC: 5b3e726f1d26329965d7427167cd210300ea5aec
+  SettingVC: 5ed169939d5df4aa25cb15937436ae3d66494ccb
 
 PODFILE CHECKSUM: 88fae1e07c336b8531f1add0218630b4cd802d0e
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.2

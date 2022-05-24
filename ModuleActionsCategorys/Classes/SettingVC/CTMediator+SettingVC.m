@@ -15,4 +15,8 @@
     return vc;
 }
 
+- (void)CTMediator_methodA {
+    [self performTarget:@"SettingVC" action:@"MethodA" params:@{@"name":@"zhongxm"} shouldCacheTarget:NO];
+}
+
 @end

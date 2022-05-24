@@ -12,7 +12,6 @@
 
 #import "Target_SettingVC.h"
 #import "SettingVC.h"
-#import "CustomViewA.h"
 
 FOUNDATION_EXPORT double SettingVCVersionNumber;
 FOUNDATION_EXPORT const unsigned char SettingVCVersionString[];

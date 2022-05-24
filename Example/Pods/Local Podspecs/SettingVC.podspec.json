@@ -20,10 +20,17 @@
   },
   "source_files": [
     "SettingVC/Classes/*",
-    "SettingVC/Classes/Actions/*"
+    "SettingVC/Classes/Actions/*",
+    "SettingVC/Classes/*/*"
   ],
   "dependencies": {
     "CTMediator": [
+
+    ],
+    "ModuleActionsCategorys/HomeVC": [
+
+    ],
+    "Masonry": [
 
     ]
   }

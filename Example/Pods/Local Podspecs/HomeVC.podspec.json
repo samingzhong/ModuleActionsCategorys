@@ -27,7 +27,10 @@
     "Masonry": [
 
     ],
-    "SettingVC": [
+    "CTMediator": [
+
+    ],
+    "ModuleActionsCategorys/SettingVC": [
 
     ]
   }
