@@ -31,6 +31,22 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'ModuleActionsCategorys/Classes/**/*'
+  header_subspecs = {
+    'HomeVC'                  => 'ModuleActionsCategorys/Classes/HomeVC/*.h',
+    'SettingVC'               => 'ModuleActionsCategorys/Classes/SettingVC/*.h',
+  }
+  
+  s.subspec "HomeVC" do |ss|
+    ss.source_files = "ModuleActionsCategorys/Classes/HomeVC/*.{h,mm,m}"
+#    ss.dependency "React-Core/Default", version
+    ss.dependency 'CTMediator'
+  end
+  
+  s.subspec "SettingVC" do |ss|
+    ss.source_files = "ModuleActionsCategorys/Classes/SettingVC/*.{h,mm,m}"
+#    ss.dependency "React-Core/Default", version
+    ss.dependency 'CTMediator'
+  end
   
   # s.resource_bundles = {
   #   'ModuleActionsCategorys' => ['ModuleActionsCategorys/Assets/*.png']

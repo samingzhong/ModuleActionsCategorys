@@ -38,9 +38,9 @@
 
 /* Begin PBXFileReference section */
 		00101DC8F6E5BE44525F1462 /* Pods-ModuleActionsCategorys_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleActionsCategorys_Example.release.xcconfig"; path = "Target Support Files/Pods-ModuleActionsCategorys_Example/Pods-ModuleActionsCategorys_Example.release.xcconfig"; sourceTree = "<group>"; };
-		1536D4FB7DF174F304D145C1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		25E541109F8FAF8F2185DBF4 /* ModuleActionsCategorys.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ModuleActionsCategorys.podspec; path = ../ModuleActionsCategorys.podspec; sourceTree = "<group>"; };
-		3C0FCCF285D3E22C597229CA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1536D4FB7DF174F304D145C1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		25E541109F8FAF8F2185DBF4 /* ModuleActionsCategorys.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ModuleActionsCategorys.podspec; path = ../ModuleActionsCategorys.podspec; sourceTree = "<group>"; };
+		3C0FCCF285D3E22C597229CA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5E5915F49693BD8BEDA244DD /* Pods_ModuleActionsCategorys_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModuleActionsCategorys_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* ModuleActionsCategorys_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModuleActionsCategorys_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -193,7 +193,6 @@
 				8CAA065A2B5B61D5BD84D98E /* Pods-ModuleActionsCategorys_Tests.debug.xcconfig */,
 				6350BF428DA7CA07EC4420E5 /* Pods-ModuleActionsCategorys_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -302,11 +302,19 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ModuleActionsCategorys_Example/Pods-ModuleActionsCategorys_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework",
+				"${BUILT_PRODUCTS_DIR}/HomeVC/HomeVC.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/ModuleActionsCategorys/ModuleActionsCategorys.framework",
+				"${BUILT_PRODUCTS_DIR}/SettingVC/SettingVC.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTMediator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HomeVC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ModuleActionsCategorys.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SettingVC.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
